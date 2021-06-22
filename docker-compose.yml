@@ -1,0 +1,21 @@
+version: '3.1'
+services:
+  postgres_database:
+    image: postgres:13.1-alpine
+    restart: always
+    container_name: postgres_database
+    env_file:
+      - .env
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+      POSTGRES_DB: ${POSTGRES_DATABASE}
+      POSTGRES_HOST: ${POSTGRES_HOST}
+      PGDATA: /var/lib/postgresql/data/pgdata
+    ports:
+      - ${POSTGRES_PORT}:${POSTGRES_PORT}
+    volumes:
+      - data_volumes:/var/lib/postgresql/data
+
+volumes:
+  data_volumes:
