@@ -1,4 +1,4 @@
-import { User } from '../user/user-entity';
+import { User } from '@/infra/db/entities/user/user-entity';
 
 export default class TestUtilUser {
   static giveAMeAValidUser(): User {
