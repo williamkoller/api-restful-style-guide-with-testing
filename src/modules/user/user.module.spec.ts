@@ -9,7 +9,7 @@ describe('UserModule', () => {
     }).compile();
     repository = module.get<UserModule>(UserModule);
   });
-  it('should be called with pcorrect params', () => {
+  it('should be called with correct params', () => {
     expect(repository).toBeDefined();
   });
 });
