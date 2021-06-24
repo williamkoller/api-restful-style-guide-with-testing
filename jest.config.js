@@ -3,7 +3,7 @@ module.exports = {
   collectCoverageFrom: [
     '<rootDir>/src/**/*.ts',
     '!<rootDir>/src/infra/db/migrations/**.ts',
-    '!<rootDir>/src/infra/db/migrations/base-entity/**.ts',
+    '!<rootDir>/src/infra/db/entities/base-entity/**.ts',
     '!<rootDir>/src/infra/db/config/**.ts',
     '!<rootDir>/src/docs/swagger/**.ts',
     '!<rootDir>/src/main.ts',
