@@ -1,7 +1,3 @@
-/* eslint-disable @typescript-eslint/no-var-requires */
-
-require('dotenv').config();
-
 module.exports = {
   roots: ['<rootDir>/src'],
   collectCoverageFrom: [
@@ -11,6 +7,7 @@ module.exports = {
     '!<rootDir>/src/infra/db/config/**.ts',
     '!<rootDir>/src/docs/swagger/**.ts',
     '!<rootDir>/src/main.ts',
+    '!<rootDir>/src/modules/app/app.module.ts',
   ],
   coverageDirectory: 'coverage',
   testEnvironment: 'node',
