@@ -1,7 +1,7 @@
 import { User } from '@/infra/db/entities/user/user-entity';
 
 export default class TestUtilUser {
-  static giveAMeAValidUser(): User {
+  static mockUser(): User {
     const user: User = {
       id: '33e79936-33b2-4365-a54f-edcaa37db644',
       name: 'any_name',

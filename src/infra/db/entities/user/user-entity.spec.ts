@@ -2,7 +2,7 @@ import TestUtilUser from '@/infra/db/entities/test/TestUtilUser';
 
 describe('UserEntity class', () => {
   it('should be called with correct params', () => {
-    const user = TestUtilUser.giveAMeAValidUser();
+    const user = TestUtilUser.mockUser();
     expect(user).toBeTruthy();
     expect(user.name).toBe('any_name');
     expect(user.surname).toBe('any_surname');
