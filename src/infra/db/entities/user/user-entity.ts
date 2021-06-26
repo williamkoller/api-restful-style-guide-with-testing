@@ -1,6 +1,7 @@
 import { BaseEntity } from '@/infra/db/entities/base-entity/base-entity';
-import { Column } from 'typeorm';
+import { Column, Entity } from 'typeorm';
 
+@Entity('users')
 export class User extends BaseEntity {
   @Column({ type: 'varchar' })
   name: string;
